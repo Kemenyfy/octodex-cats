@@ -10,22 +10,13 @@ body {
 }
 
 /* navigation bar positioning */
-.topnav {
+.nav {
   background-color: rgb(241, 239, 239);
   overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-/* Style the links inside the navigation bar */
-#navleft{
-  display: flex;
-  flex-direction: row;
-  margin-right: 10px;
-  font-size: 10em;
-  font-color: black;
 }
 
 #navright{
@@ -37,11 +28,11 @@ body {
   list-style-type: none;
 }
 
-.topnav a {
+.nav a {
   display: flex;
   flex-direction: row;
-  color: #000000; */
-  justify-content: right; */
+  color: #000000;
+  justify-content: right;
   text-align: right;
   padding: 14px 16px;
   text-decoration: none;
@@ -50,19 +41,21 @@ body {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.nav a:hover {
   color: rgb(0, 132, 255);
 }
 
-img{
-  width: 25em;
-  border: 1px solid black;
+.cats {
+  width: 27em;
+  border: 0.1em solid lightgray;
   margin: 1em 1em 0em 1em;
 }
 
 .pins {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .pin {
@@ -72,18 +65,48 @@ img{
   max-height: 40em;
 }
 
-.imgtext {
+.imagetext {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 1em 1em 0em 1em;
-}
-.imagetxt #id {
-  width: 3em;
-  align-self: flex-Start;
-  margin: 0.5em 0em 0em 1em;
-  border: transparent;
-  background-color: transparent;
-  flex-direction: row;
+  margin: 0em 1em 0em 1em;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 1em;
 }
 
+.light-text, 
+.imagetext #id {
+  color: grey;
+}
+
+.imagetext #name {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user {
+  width: 2em;
+  border: none;
+  margin: 0em 0.3em 0em 0em;
+}
+
+.logo {
+  width: 12em;
+  margin-left: 1em;
+}
+
+.footer {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 1em 1em 1em;
+  border-top: 1px solid lightgray;
+  padding: 2em;
+  width: 100%;
+}
